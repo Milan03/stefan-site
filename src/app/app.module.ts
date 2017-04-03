@@ -14,7 +14,7 @@ import {
   RouterModule,
   PreloadAllModules
 } from '@angular/router';
-
+import { AlertModule } from 'ng2-bootstrap/ng2-bootstrap';
 /*
  * Platform and Environment providers/directives/pipes
  */
@@ -60,6 +60,7 @@ type StoreType = {
     BrowserModule,
     FormsModule,
     HttpModule,
+    AlertModule.forRoot(),
     RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules })
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
