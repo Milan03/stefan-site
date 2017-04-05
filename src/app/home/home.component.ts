@@ -24,9 +24,7 @@ import { XLargeDirective } from './x-large';
 export class HomeComponent implements OnInit {
   // Set our default values
   public localState = { value: '' };
-  private flexBorderSize: number = 3;
-  private flexImageSize: number = 7;
-  private galleryName: string = '';
+
   // TypeScript public modifiers
   constructor(
     public appState: AppState,
@@ -44,7 +42,4 @@ export class HomeComponent implements OnInit {
     this.localState.value = '';
   }
 
-  onViewerVisibilityChanged(isVisibile: boolean) {
-    console.log('viewer visible: ' + isVisibile);
-  }
 }
