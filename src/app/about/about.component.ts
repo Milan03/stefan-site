@@ -16,8 +16,8 @@ export class AboutComponent implements OnInit {
     public route: ActivatedRoute
   ) {}
 
-  private flexBorderSize: number = 3;
-  private flexImageSize: number = 7;
+  private flexBorderSize: number = 1;
+  private flexImageSize: number = 10;
   private galleryName: string = '';
 
   public ngOnInit() {
