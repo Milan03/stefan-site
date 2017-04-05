@@ -29,6 +29,10 @@ import 'core-js/es6/reflect';
 import 'core-js/es7/reflect';
 import 'zone.js/dist/zone';
 
+// angular2-image-gallary
+import 'web-animations-js/web-animations.min';
+import 'hammerjs/hammer';
+
 if ('production' === ENV) {
   // Production
 

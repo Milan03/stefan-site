@@ -15,6 +15,7 @@ import {
   PreloadAllModules
 } from '@angular/router';
 import { AlertModule } from 'ng2-bootstrap/ng2-bootstrap';
+import { Angular2ImageGalleryModule } from '../../node_modules/angular2-image-gallery';
 /*
  * Platform and Environment providers/directives/pipes
  */
@@ -60,6 +61,7 @@ type StoreType = {
     BrowserModule,
     FormsModule,
     HttpModule,
+    Angular2ImageGalleryModule,
     AlertModule.forRoot(),
     RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules })
   ],
