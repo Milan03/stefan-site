@@ -16,6 +16,7 @@ import {
 } from '@angular/router';
 import { AlertModule } from 'ng2-bootstrap/ng2-bootstrap';
 import { Angular2ImageGalleryModule } from '../../node_modules/angular2-image-gallery';
+import { CarouselModule } from 'ngx-bootstrap';
 /*
  * Platform and Environment providers/directives/pipes
  */
@@ -63,6 +64,7 @@ type StoreType = {
     HttpModule,
     Angular2ImageGalleryModule,
     AlertModule.forRoot(),
+    CarouselModule.forRoot(),
     RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules })
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
