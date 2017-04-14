@@ -40,11 +40,20 @@ a:focus {
 }
 
 #contact {
-    background: #F0F8FF;
+    background: #ded1c1;
     color: #000000;
-    padding-bottom: 80px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.contact-section {
+    padding-top: 50px;
 }
 
 textarea.form-control {
     height: 100px;
+}
+
+.left {
+    float: left;
 }
