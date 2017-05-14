@@ -1,51 +1,41 @@
 <nav class="navbar navbar-inverse navbar-brand navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <a class="navbar-brand" [routerLink]=" ['./home'] " routerLinkActive="active" fragment="slides" [routerLinkActiveOptions]="{exact: true}"  (click)="onAnchorClick()">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" [routerLink]=" ['./home'] " routerLinkActive="active" fragment="slides" [routerLinkActiveOptions]="{exact: true}"
+        (click)="onAnchorClick()">
         Home
       </a>
-            <a class="navbar-brand pull-right" [routerLink]=" ['./about'] " routerLinkActive="active" fragment="gallery-container" [routerLinkActiveOptions]="{exact: true}" (click)="onAnchorClick()">
+      <a class="navbar-brand pull-right" [routerLink]=" ['./about'] " routerLinkActive="active" fragment="gallery-container" [routerLinkActiveOptions]="{exact: true}"
+        (click)="onAnchorClick()">
         Gallery
       </a>
-        </div>
     </div>
+  </div>
 </nav>
 
 <main>
-    <div class="jumbotron">
-        <div class="container text-center">
-            <h1>Stefan Sim Art</h1>
-            <div>
-                <p><img src="../../assets/img/stefan/home.png" class="img-responsive logo-image text-center"></p>
-                <p class="tagline">
-                    Stefan Simonovic | ARTIST | 1992/08/03 <i class="material-icons">cake</i>
-                </p>
-                <p class="tagline">
-                    Based in London, ON
-                </p>
-                <p class="tagline">
-                    ssimonovic03@gmail.com
-                </p>
-            </div>
-            <div>
-                <!--<a href="https://github.com/amitmerchant1990/electron-markdownify/releases/tag/v1.2.0" class="btn btn-primary btn-lg">Download</a>
-                <a href="https://github.com/amitmerchant1990/electron-markdownify/" class="btn btn-danger btn-lg">GitHub</a>-->
-            </div>
-        </div>
-        <div class="text-center">
-            <img src="../../assets/img/stefan/stefan-home.jpg" class="img-responsive custom-image">
-        </div>
+  <div class="jumbotron">
+    <div class="container text-center">
+      <h1>Stefan Sim Art</h1>
+      <div>
+        <p><img src="../../assets/img/stefan/home.png" class="img-responsive logo-image text-center"></p>
+        <p class="tagline">
+          Stefan Simonovic | ARTIST | 1992/08/03 <i class="material-icons">cake</i>
+        </p>
+        <p class="tagline">
+          Based in London, ON
+        </p>
+        <p class="tagline">
+          ssimonovic03@gmail.com
+        </p>
+      </div>
+      <div>
+      </div>
     </div>
-    <router-outlet id="f"></router-outlet>
+    <div class="text-center">
+      <img src="../../assets/img/stefan/stefan-home.jpg" class="img-responsive custom-image">
+    </div>
+  </div>
+  <router-outlet></router-outlet>
 </main>
-
-<!--<pre class="app-state">this.appState.state = {{ appState.state | json }}</pre>-->
-
-<footer>
-    <!--<span>WebPack Angular 2 Starter by <a [href]="url">@AngularClass</a></span>33
-  <div>
-    <a [href]="url">
-      <img [src]="angularclassLogo" width="25%">
-    </a>
-  </div>-->
-</footer>
+<footer></footer>

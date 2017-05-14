@@ -5,9 +5,13 @@ import {
   Component,
   OnInit,
   ViewEncapsulation
-}                         from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { AppState }       from './app.service';
+} from '@angular/core';
+import {
+  ActivatedRoute
+} from '@angular/router';
+import {
+  AppState
+} from './app.service';
 
 /*
  * App Component
@@ -33,13 +37,13 @@ export class AppComponent implements OnInit {
 
   public ngOnInit() {
     console.log('Initial App State', this.appState.state);
-    
+
   }
 
-  onAnchorClick ( ) {
-    this.route.fragment.subscribe ( f => {
-      const element = document.querySelector ( "#" + f )
-      if ( element ) element.scrollIntoView ( element )
+  onAnchorClick() {
+    this.route.fragment.subscribe(f => {
+      const element = document.querySelector("#" + f)
+      if (element) element.scrollIntoView(element)
     });
   }
 
