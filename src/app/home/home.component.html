@@ -1,4 +1,4 @@
-<section id="carousel" class="content-section text-center">
+<!--<section id="carousel" class="content-section text-center">
   <div class="container">
     <div class="row">
       <div class="carousel-section">
@@ -16,7 +16,25 @@
       </div>
     </div>
   </div>
-</section>
+</section>-->
+<div  id="slider">
+  <input checked="" type="radio" name="slider" id="slide1" selected="false">
+  <input type="radio" name="slider" id="slide2" selected="false">
+  <input type="radio" name="slider" id="slide3" selected="false">
+  <input type="radio" name="slider" id="slide4" selected="false">
+  <div tooltip="Click buttons below to view more images!" tooltipPlacement="top" [tooltipAnimation]="true" id="slides">
+    <div id="overflow">
+      <div class="inner">
+        <img src="../../assets/img/gallery/preview_xxs/bluejay.jpg">
+        <img src="../../assets/img/gallery/preview_xxs/cards.jpg">
+        <img src="../../assets/img/gallery/preview_xxs/ant.jpg">
+      </div>
+    </div>
+  </div>
+  <label for="slide1"></label>
+  <label for="slide2"></label>
+  <label for="slide3"></label>
+</div>
 <section id="contact" class="content-section text-center">
   <div class="contact-section">
     <div class="container">
