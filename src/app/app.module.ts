@@ -1,37 +1,36 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { BrowserModule }                from '@angular/platform-browser';
+import { FormsModule }                  from '@angular/forms';
+import { HttpModule }                   from '@angular/http';
 import {
   NgModule,
   ApplicationRef
-} from '@angular/core';
+}                                       from '@angular/core';
 import {
   removeNgStyles,
   createNewHosts,
   createInputTransfer
-} from '@angularclass/hmr';
+}                                       from '@angularclass/hmr';
 import {
   RouterModule,
   PreloadAllModules
-} from '@angular/router';
-import { AlertModule } from 'ng2-bootstrap/ng2-bootstrap';
-import { Angular2ImageGalleryModule } from '../../node_modules/angular2-image-gallery';
-import { CarouselModule } from 'ngx-bootstrap';
+}                                       from '@angular/router';
+import { AlertModule }                  from 'ng2-bootstrap/ng2-bootstrap';
+import { Angular2ImageGalleryModule }   from '../../node_modules/angular2-image-gallery';
+import { CarouselModule }               from 'ngx-bootstrap';
 /*
  * Platform and Environment providers/directives/pipes
  */
-import { ENV_PROVIDERS } from './environment';
-import { ROUTES } from './app.routes';
+import { ENV_PROVIDERS }                from './environment';
+import { ROUTES }                       from './app.routes';
 // App is our top level component
-import { AppComponent } from './app.component';
-import { APP_RESOLVER_PROVIDERS } from './app.resolver';
-import { AppState, InternalStateType } from './app.service';
-import { HomeComponent } from './home';
-import { AboutComponent } from './about';
-import { NoContentComponent } from './no-content';
-import { XLargeDirective } from './home/x-large';
-import { TooltipModule } from "ngx-tooltip";
-
+import { AppComponent }                 from './app.component';
+import { APP_RESOLVER_PROVIDERS }       from './app.resolver';
+import { AppState, InternalStateType }  from './app.service';
+import { HomeComponent }                from './home';
+import { AboutComponent }               from './about';
+import { NoContentComponent }           from './no-content';
+import { XLargeDirective }              from './home/x-large';
+import { TooltipModule }                from "ngx-tooltip";
 
 import '../styles/styles.scss';
 import '../styles/headings.css';
