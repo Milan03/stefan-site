@@ -159,3 +159,25 @@ label {
 #slide4:checked~label[for="slide4"] {
   background: #ded1c1;
 }
+
+.row {
+  width: 350px;
+  margin: 0 auto;
+  padding-bottom: 3em;
+}
+
+.h-margin {
+  margin-left: 4.7em;
+}
+
+.li-margin {
+  margin-left: 4em;
+}
+
+.p-margin {
+  font-size: 12px;
+  width: 50%;
+  margin: 0 auto;
+  padding-left: 20em;
+  padding-bottom: 2em;
+}
