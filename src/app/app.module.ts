@@ -30,7 +30,7 @@ import { HomeComponent }                from './home';
 import { AboutComponent }               from './about';
 import { NoContentComponent }           from './no-content';
 import { XLargeDirective }              from './home/x-large';
-import { TooltipModule }                from "ngx-tooltip";
+import { TooltipModule }                from 'ngx-tooltip';
 
 import '../styles/styles.scss';
 import '../styles/headings.css';
