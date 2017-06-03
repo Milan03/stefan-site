@@ -14,7 +14,7 @@ import {
   RouterModule,
   PreloadAllModules
 }                                       from '@angular/router';
-import { AlertModule }                  from 'ng2-bootstrap/ng2-bootstrap';
+import { AlertModule }                  from 'ng2-bootstrap';
 import { Angular2ImageGalleryModule }   from '../../node_modules/angular2-image-gallery';
 import { CarouselModule }               from 'ngx-bootstrap';
 /*
