@@ -7,7 +7,9 @@ import {
   ViewEncapsulation
 } from '@angular/core';
 import {
-  ActivatedRoute
+  Router,
+  ActivatedRoute,
+  NavigationEnd
 } from '@angular/router';
 import {
   AppState
@@ -32,8 +34,19 @@ export class AppComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    public appState: AppState
-  ) {}
+    public appState: AppState,
+    public router: Router
+  ) {
+     router.events.subscribe(s => {
+       if (s instanceof NavigationEnd) {
+         const tree = router.parseUrl(router.url);
+         if (tree.fragment) {
+           const element = document.querySelector("#" + tree.fragment);
+          if (element) { element.scrollIntoView(element); }
+         }
+       }
+     });
+  }
 
   public ngOnInit() {
     console.log('Initial App State', this.appState.state);
