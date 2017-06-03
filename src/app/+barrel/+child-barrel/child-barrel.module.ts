@@ -6,7 +6,7 @@ import { RouterModule } from '@angular/router';
 import { routes } from './child-barrel.routes';
 import { ChildBarrelComponent } from './child-barrel.component';
 
-console.log('`ChildBarrel` bundle loaded asynchronously');
+//console.log('`ChildBarrel` bundle loaded asynchronously');
 
 @NgModule({
   declarations: [
