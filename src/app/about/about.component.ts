@@ -43,7 +43,7 @@ export class AboutComponent implements OnInit {
 
       System.import('../../assets/mock-data/mock-data.json')
         .then((json) => {
-          console.log('async mockData', json);
+          //console.log('async mockData', json);
           this.localState = json;
         });
 
@@ -51,6 +51,6 @@ export class AboutComponent implements OnInit {
   }
 
   onViewerVisibilityChanged(isVisibile: boolean) {
-    console.log('viewer visible: ' + isVisibile);
+   // console.log('viewer visible: ' + isVisibile);
   }
 }
