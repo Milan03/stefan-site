@@ -1,24 +1,23 @@
-// import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
-// @Component({
-//     moduleId: module.id,
-//     selector: 'my-gallery',
-//     templateUrl: './my-gallery.component.html',
-//     styleUrls: ['./my-gallery.component.css']
-// })
-// export class MyGalleryComponent implements OnInit {
+@Component({
+    selector: 'my-gallery',
+    templateUrl: './my-gallery.component.html',
+    styleUrls: ['./my-gallery.component.css']
+})
+export class MyGalleryComponent implements OnInit {
 
-//     constructor() {}
+    constructor() {}
 
-//     private flexBorderSize: number = 3;
-//     private flexImageSize: number = 7;
-//     private galleryName: string = 'stefan-gallery';
+    private flexBorderSize: number = 3;
+    private flexImageSize: number = 7;
+    private galleryName: string = 'stefan-gallery';
 
-//     ngOnInit() {
+    ngOnInit() {
 
-//     }
+    }
 
-//     onViewerVisibilityChanged(isVisibile: boolean) {
-//         console.log('viewer visible: ' +isVisibile);
-//     }
-// }
+    onViewerVisibilityChanged(isVisibile: boolean) {
+        console.log('viewer visible: ' +isVisibile);
+    }
+}

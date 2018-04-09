@@ -1,41 +1,41 @@
 <nav class="navbar navbar-inverse navbar-brand navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <a class="navbar-brand" [routerLink]=" ['./home'] " routerLinkActive="active" fragment="slides" [routerLinkActiveOptions]="{exact: true}"
-        (click)="onAnchorClick()">
-        Home
+    <div class="container">
+        <div class="navbar-header">
+            <a tooltip="View 3D renderings" class="navbar-brand" [routerLink]=" ['./my-gallery'] " routerLinkActive="active" fragment="slides" [routerLinkActiveOptions]="{exact: true}" (click)="onAnchorClick()">
+        3D Gallery
       </a>
-      <a tooltip="View all my work" class="navbar-brand pull-right" [routerLink]=" ['./about'] " routerLinkActive="active" fragment="gallery-container" [routerLinkActiveOptions]="{exact: true}"
-        (click)="onAnchorClick()">
-        Gallery
+            <a tooltip="View traditional drawings" class="navbar-brand pull-right" [routerLink]=" ['./about'] " routerLinkActive="active" fragment="gallery-container" [routerLinkActiveOptions]="{exact: true}" (click)="onAnchorClick()">
+        Traditional Gallery
       </a>
+        </div>
     </div>
-  </div>
 </nav>
 
 <main>
-  <div class="jumbotron">
-    <div class="container text-center">
-      <h1>Stefan Simonovic</h1>
-      <div>
-        <p><img src="../../assets/img/stefan/home.png" class="img-responsive logo-image text-center"></p>
-        <p class="tagline">
-          Stefan Simonovic | ARTIST | 1992/08/03 <i class="material-icons">cake</i>
-        </p>
-        <p class="tagline">
-          Based in London, ON
-        </p>
-        <p class="tagline">
-          ssimonovic03@gmail.com
-        </p>
-      </div>
-      <div>
-      </div>
+    <div class="jumbotron">
+        <div class="container text-center">
+            <h1>Stefan Simonovic</h1>
+            <div>
+                <p>
+                    <a href='' [routerLink]=" ['./home'] "><img src="../../assets/img/stefan/home.png" class="img-responsive logo-image text-center"></a>
+                </p>
+                <p class="tagline">
+                    Stefan Simonovic | ARTIST | 1992/08/03 <i class="material-icons">cake</i>
+                </p>
+                <p class="tagline">
+                    Based in London, ON
+                </p>
+                <p class="tagline">
+                    ssimonovic03@gmail.com
+                </p>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div class="text-center">
+            <img src="../../assets/img/stefan/stefan-home.jpg" class="img-responsive custom-image">
+        </div>
     </div>
-    <div class="text-center">
-      <img src="../../assets/img/stefan/stefan-home.jpg" class="img-responsive custom-image">
-    </div>
-  </div>
-  <router-outlet></router-outlet>
+    <router-outlet></router-outlet>
 </main>
 <footer></footer>

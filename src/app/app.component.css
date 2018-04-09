@@ -4,6 +4,18 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-a.active {
+a:active,
+a:focus {
     background-color: #ded1c1;
+    text-decoration: none;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff;
+    text-decoration: none;
 }
