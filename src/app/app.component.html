@@ -1,7 +1,7 @@
 <nav class="navbar navbar-inverse navbar-brand navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <a tooltip="View 3D renderings" class="navbar-brand" [routerLink]=" ['./my-gallery'] " routerLinkActive="active" fragment="slides" [routerLinkActiveOptions]="{exact: true}" (click)="onAnchorClick()">
+            <a tooltip="View 3D renderings" class="navbar-brand" [routerLink]=" ['./my-gallery'] " routerLinkActive="active" fragment="gallery-3d" [routerLinkActiveOptions]="{exact: true}" (click)="onAnchorClick()">
         3D Gallery
       </a>
             <a tooltip="View traditional drawings" class="navbar-brand pull-right" [routerLink]=" ['./about'] " routerLinkActive="active" fragment="gallery-container" [routerLinkActiveOptions]="{exact: true}" (click)="onAnchorClick()">
@@ -17,7 +17,7 @@
             <h1>Stefan Simonovic</h1>
             <div>
                 <p>
-                    <a href='' [routerLink]=" ['./home'] "><img src="../../assets/img/stefan/home.png" class="img-responsive logo-image text-center"></a>
+                    <a fragment="slider" [routerLink]=" ['./home'] "><img src="../../assets/img/stefan/home.png" class="img-responsive logo-image text-center"></a>
                 </p>
                 <p class="tagline">
                     Stefan Simonovic | ARTIST | 1992/08/03 <i class="material-icons">cake</i>

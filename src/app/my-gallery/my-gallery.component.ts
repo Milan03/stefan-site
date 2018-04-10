@@ -6,12 +6,13 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./my-gallery.component.css']
 })
 export class MyGalleryComponent implements OnInit {
-
-    constructor() {}
-
     private flexBorderSize: number = 3;
     private flexImageSize: number = 7;
-    private galleryName: string = 'stefan-gallery';
+    private galleryName: string = '';
+
+    constructor() {
+        this.galleryName = "gallery-3d";
+    }
 
     ngOnInit() {
 

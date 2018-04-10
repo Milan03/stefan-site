@@ -17,6 +17,7 @@ import {
 import { AlertModule }                  from 'ng2-bootstrap';
 import { Angular2ImageGalleryModule }   from '../../node_modules/angular2-image-gallery';
 import { CarouselModule }               from 'ngx-bootstrap';
+import { TooltipModule }                from 'ngx-tooltip';
 /*
  * Platform and Environment providers/directives/pipes
  */
@@ -30,7 +31,6 @@ import { HomeComponent }                from './home';
 import { AboutComponent }               from './about';
 import { NoContentComponent }           from './no-content';
 import { XLargeDirective }              from './home/x-large';
-import { TooltipModule }                from 'ngx-tooltip';
 import { MyGalleryComponent }           from './my-gallery/my-gallery.component';
 
 import '../styles/styles.scss';
