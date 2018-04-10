@@ -28,3 +28,9 @@ a:hover {
 .innerGalleryContainer {
     margin-top: 2em;
 }
+
+@media (max-width: 320px) {
+    a {
+        font-size: 14px !important;
+    }
+}
